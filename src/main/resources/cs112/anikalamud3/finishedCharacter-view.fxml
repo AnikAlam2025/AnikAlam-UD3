@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="437.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs112.anikalamud3.finishedCharacterController">
+   <children>
+      <Label fx:id="finishedCharacterLabel" alignment="CENTER" layoutX="55.0" layoutY="34.0" prefHeight="333.0" prefWidth="327.0" text="Your Created Character" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

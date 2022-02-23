@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="375.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs112.anikalamud3.displayScionsController">
+   <children>
+      <Button fx:id="displayScionsButton" layoutX="579.0" layoutY="344.0" mnemonicParsing="false" onAction="#onDisplayScionsButtonClick" text="Display Scions" />
+      <HBox layoutX="25.0" layoutY="14.0" prefHeight="305.0" prefWidth="1200.0">
+         <children>
+            <Label fx:id="astrologianLabel" alignment="CENTER" prefHeight="250.0" prefWidth="200.0" text="Astrologian" textAlignment="CENTER">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="blackMageLabel" alignment="CENTER" prefHeight="250.0" prefWidth="200.0" text="Black Mage" textAlignment="CENTER" />
+            <Label fx:id="dragoonLabel" alignment="CENTER" prefHeight="250.0" prefWidth="200.0" text="Dragoon" textAlignment="CENTER" />
+            <Label fx:id="gunbreakerLabel" alignment="CENTER" prefHeight="250.0" prefWidth="200.0" text="Gunbreaker" textAlignment="CENTER" />
+            <Label fx:id="redMageLabel" alignment="CENTER" prefHeight="250.0" prefWidth="200.0" text="Red Mage" textAlignment="CENTER" />
+            <Label fx:id="scholarLabel" alignment="CENTER" prefHeight="250.0" prefWidth="200.0" text="Scholar" textAlignment="CENTER" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="795.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs112.anikalamud3.characterCreationController">
+   <children>
+      <VBox layoutX="10.0" layoutY="14.0" prefHeight="731.0" prefWidth="380.0">
+         <children>
+            <HBox fx:id="weaponLevelLabel" prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="jobClassLabel" prefHeight="34.0" prefWidth="120.0" text="Choose Job Class: " wrapText="true">
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ChoiceBox fx:id="jobClassChoiceBox" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets top="13.0" />
+                     </HBox.margin>
+                  </ChoiceBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="characterNameLabel" text="Enter Character Name: ">
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="characterNameTextField">
+                     <HBox.margin>
+                        <Insets left="15.0" top="12.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="raceLabel" text="Enter Race Here: ">
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ChoiceBox fx:id="raceChoiceBox" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets left="15.0" top="13.0" />
+                     </HBox.margin>
+                  </ChoiceBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="mountLabel" text="Enter Mount Here: ">
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ChoiceBox fx:id="mountChoiceBox" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets left="15.0" top="13.0" />
+                     </HBox.margin>
+                  </ChoiceBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="minionLabel" text="Enter Minion Here: ">
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ChoiceBox fx:id="minionChoiceBox" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets left="15.0" top="13.0" />
+                     </HBox.margin>
+                  </ChoiceBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="characterLevelLabel" text="Enter Character Level(1-80): ">
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Slider fx:id="characterLevelSlider" majorTickUnit="10.0" max="80.0" showTickLabels="true" showTickMarks="true" snapToTicks="true">
+                     <HBox.margin>
+                        <Insets left="15.0" top="17.0" />
+                     </HBox.margin>
+                  </Slider>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="defenseLabel" text="Enter Character's Defense(1-70):  ">
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Slider fx:id="defenseSlider" majorTickUnit="10.0" max="70.0" prefHeight="38.0" prefWidth="168.0" showTickLabels="true" showTickMarks="true" snapToTicks="true">
+                     <HBox.margin>
+                        <Insets left="15.0" top="17.0" />
+                     </HBox.margin>
+                  </Slider>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="hitPointsLabel" text="Enter Character's HitPoints(1-10,000): " wrapText="true">
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Slider fx:id="hitPointsSlider" blockIncrement="1.0" majorTickUnit="1000.0" max="10000.0" minorTickCount="0" prefHeight="38.0" prefWidth="248.0" showTickLabels="true" showTickMarks="true" snapToTicks="true">
+                     <HBox.margin>
+                        <Insets left="10.0" top="17.0" />
+                     </HBox.margin>
+                  </Slider>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="weaponNameLabel" text="Enter Weapon's Name: ">
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="weaponNameTextField">
+                     <HBox.margin>
+                        <Insets left="15.0" top="12.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="weaponLabel" text="Enter Weapon Type: ">
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ChoiceBox fx:id="weaponTypeChoiceBox" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets left="15.0" top="13.0" />
+                     </HBox.margin>
+                  </ChoiceBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="damageTypeLabel" text="Enter Damage Type(Physical/Magical): ">
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ChoiceBox fx:id="weaponDamageTypeChoiceBox" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets left="15.0" top="13.0" />
+                     </HBox.margin>
+                  </ChoiceBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="baseDamageLabel" text="Enter Weapon's Base Damage(1-100): ">
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Slider fx:id="baseDamageSlider" showTickLabels="true" showTickMarks="true">
+                     <HBox.margin>
+                        <Insets left="15.0" top="17.0" />
+                     </HBox.margin>
+                  </Slider>
+               </children>
+            </HBox>
+            <HBox fx:id="weaponLevelLabel" prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="weaponLevelLabel" prefHeight="34.0" prefWidth="204.0" text="Enter Weapon's Level(1-80, must be equal/lower than character level): " wrapText="true">
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Slider fx:id="weaponLevelSlider" majorTickUnit="10.0" max="80.0" prefHeight="38.0" prefWidth="186.0" showTickLabels="true" showTickMarks="true" snapToTicks="true">
+                     <HBox.margin>
+                        <Insets left="15.0" top="17.0" />
+                     </HBox.margin>
+                  </Slider>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="finishCharacterButton" layoutX="150.0" layoutY="756.0" mnemonicParsing="false" onAction="#onFinishCharacterButtonClick" text="Finish Character" />
+   </children>
+</AnchorPane>
